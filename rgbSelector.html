@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <title>RGB Selector</title>
+    <link rel="stylesheet" type="text/css" href="styles4.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>RGB Selector</h1>
+    </div>
+    <div class="content">
+        <div class="color-box">
+            <div class="color" id="color"></div>
+        </div>
+        <br/>
+        <div class="sliders">
+            <div class="slider">
+                <label for="red">Red</label>
+                <input type="range" id="red" min="0" max="255" value="0" oninput="updateColor()">
+                <span id="red-value">0</span>
+            </div>
+            <div class="slider">
+                <label for="green">Green</label>
+                <input type="range" id="green" min="0" max="255" value="0" oninput="updateColor()">
+                <span id="green-value">0</span>
+            </div>
+            <div class="slider">
+                <label for="blue">Blue</label>
+                <input type="range" id="blue" min="0" max="255" value="0" oninput="updateColor()">
+                <span id="blue-value">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateColor() {
+        const red = document.getElementById("red").value;
+        const green = document.getElementById("green").value;
+        const blue = document.getElementById("blue").value;
+
+        document.getElementById("red-value").innerText = red;
+        document.getElementById("green-value").innerText = green;
+        document.getElementById("blue-value").innerText = blue;
+
+        const colorBox = document.getElementById("color");
+        colorBox.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    }
+</script>
+</body>
+</html>

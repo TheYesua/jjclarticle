@@ -1,0 +1,15 @@
+#name, #surname, #email, #date, #city, #country, .myButtons{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+.myButtons{
+    width: 9.7%;
+    padding-right: 50px;
+}

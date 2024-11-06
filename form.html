@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Form</title>
+</head>
+<body>
+<form id="myForm">
+    <input type="text" id="name" name="name" value="First name"><br>
+    <input type="text" id="surname" name="surname" value="Last name"><br>
+    <input type="email" id="email" name="email" value="Email"><br>
+    <input type="date" id="date" name="date"><br>
+    <select name="city" id="city">
+        <option value="1">Select city</option>
+        <option value="Riga">Riga</option>
+        <option value="Jurmala">Jurmala</option>
+        <option value="Ceuta">Ceuta</option>
+        <option value="Malaga">Malaga</option>
+    </select><br>
+    <input type="radio" id="gender1" name="gender" value="Male">
+    <label for="gender1">Male</label>
+    <input type="radio" id="gender2" name="gender" value="Female">
+    <label for="gender2">Female</label>
+    <input type="radio" id="gender3" name="gender" value="Other">
+    <label for="gender3">Other</label><br>
+    <select name="country" id="country">
+        <option value="1">Select country</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Spain">Spain</option>
+    </select><br>
+    <input type="submit" value="Submit" class="myButtons">
+    <input type="reset" value="Reset" class="myButtons">
+    <input type="button" value="Cancel" class="myButtons">
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const surname = document.getElementById("surname").value;
+        const email = document.getElementById("email").value;
+        const date = document.getElementById("date").value;
+        const city = document.getElementById("city").value;
+        const country = document.getElementById("country").value;
+        const gender = document.querySelector('input[name="gender"]:checked')?.value || "Not selected";
+
+        alert(
+            `Name: ${name}\n` +
+            `Surname: ${surname}\n` +
+            `Email: ${email}\n` +
+            `Date: ${date}\n` +
+            `City: ${city}\n` +
+            `Country: ${country}\n` +
+            `Gender: ${gender}`
+        );
+        document.getElementById("myForm").reset();
+    });
+</script>
+</body>
+</html>

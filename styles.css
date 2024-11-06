@@ -1,0 +1,128 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 14%);
+    max-width: 1200px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-inline: 4%;
+    border-radius: 8px;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Ajusta el tamaño según prefieras */
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+    opacity: 1;
+}
+body {
+    margin-top: 50px;
+}
+button:hover {
+    background-color: #45a049;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: Calibri, serif;
+    background: linear-gradient(to bottom right, #d8a07f, #88c4d8);
+    margin-inline: 7%;
+}
+h1{
+    text-align: center;
+}
+a{
+    color: blue;
+    font-style: italic;
+    target: new;
+}
+p{
+    text-align: justify;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#articleFrame{
+    display:none;
+    width:70%;
+    height:500px;
+    border:1px solid black;
+    margin-top: 2%;
+}
+#name, #surname, #email, #date, #city, #country, .myButtons{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+.myButtons{
+    width: 9.7%;
+    padding-right: 50px;
+}
+#tajinImage{
+    width: 20%;
+    height: 20%;
+}
+.ceuta-table {
+    float: right;
+    width: 300px;
+    border-collapse: collapse;
+    background-color: white;
+    margin-left: 10px;
+}
+.ceuta-table th, .ceuta-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.ceuta-table th {
+    background-color: lightgray;
+}
+.ceuta-POV, .ceuta-FLAG {
+    width: 100%;
+    height: auto;
+}
+.footer-section{
+    padding-top: 2%;
+    text-align: center;
+}

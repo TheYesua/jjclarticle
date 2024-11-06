@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesus J Cantero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ceuta</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/197/197553.png">
+</head>
+<body id="home">
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="form.html" target="_blank">Form</a>
+        <a href="#" onclick="openPopup('calculator.html', 'Calculator', 400, 500)">Calculator</a>
+        <a href="rgbSelector.html" target="_blank">RGB Selector</a>
+    </div>
+
+    <div class="header-section">
+        <h1 style="text-align: center">Ceuta</h1>
+        <marquee><small>From <a href="https://en.wikipedia.org/wiki/Ceuta" target="_blank">Wikipedia</a> the free encyclopedia</small>
+        </marquee>
+    </div>
+    <div class="content-section">
+        <table class="ceuta-table">
+            <tr>
+                <th colspan="2" style="text-align: center">Ceuta (Autonomous city)</th>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vista_de_Ceuta_y_la_pen%C3%ADnsula_de_Almina_desde_el_mirador_de_Isabel_II.jpg/402px-Vista_de_Ceuta_y_la_pen%C3%ADnsula_de_Almina_desde_el_mirador_de_Isabel_II.jpg" alt="City of Ceuta" class="ceuta-POV"></td>
+            </tr>
+            <tr>
+                <th>Flag</th>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Ceuta.svg/188px-Flag_of_Ceuta.svg.png" alt="Flag of Ceuta" class="ceuta-FLAG"></td>
+            </tr>
+            <tr>
+                <th>Area</th>
+                <td>
+                    <ul>
+                        <li><strong>Total</strong> 18.5 km<sup>2</sup> (7.1 sq mi)</li>
+                        <li><strong>Land</strong> 18.5 km<sup>2</sup> (7.1 sq mi)</li>
+                        <li><strong>Rank</strong> <a href="https://en.wikipedia.org/wiki/Ranked_lists_of_Spanish_autonomous_communities" style="color: blue" target="_blank"><abbr title="This article includes several ranked indicators for Spain's 17 autonomous communities, as well as for the autonomous cities of Ceuta and Melilla.">18th</abbr></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Population 2018</th>
+                <td>
+                    <ul>
+                        <li><strong>Total</strong> 85,144</li>
+                        <li><strong>Rank</strong> 19th</li>
+                        <li><strong>Density</strong> 4,600/km<sup>2</sup> (12,000/sq mi)</li>
+                        <li><strong>Rank</strong> <a href="https://en.wikipedia.org/wiki/Ranked_lists_of_Spanish_autonomous_communities" style="color: blue" target="_blank"><abbr title="This article includes several ranked indicators for Spain's 17 autonomous communities, as well as for the autonomous cities of Ceuta and Melilla.">2nd</abbr></a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <strong>Ceuta</strong> is an autonomous city of Spain on the North African coast.
+            Bordered by Morocco, it lies along the boundary between the Mediterranean Sea and
+            the Atlantic Ocean. Ceuta is one of the special member state territories of the
+            European Union, and it is one of several Spanish territories in Africa, which include
+            Melilla and the Canary Islands. It was a regular municipality belonging to the province
+            of Cádiz prior to the passing of its Statute of Autonomy in March 1995, as provided by
+            the Spanish Constitution, henceforth becoming an autonomous city.
+            <br/><br/>
+            Ceuta, like Melilla and the Canary Islands, was classified as a free
+            port before Spain joined the European Union. Its population is predominantly
+            Christian and Muslim, with a small minority of Sephardic Jews and Sindhi Hindus,
+            from Pakistan.
+        </p>
+
+        <button id="toggleButton" onclick="toggleIframe()">Show Article</button>
+        <iframe id="articleFrame" src="article.html"></iframe>
+        <br/>
+
+        <h2>Food</h2>
+        <p>Lamb tagine: “Tagine” refers to a cone-shaped cooking vessel from North Africa as well as the stew that is cooked inside. All sorts of foods are cooked in tagines, from vegetables to meat and fish. Warm spices come together with the natural juices that seep from the cooking meat and vegetables to form the sauce that makes tagines so irresistible.
+
+            Meats are often slow cooked using stewing cuts of meat to make them beautifully tender, such in as the lamb tagine I’m sharing today. On the other hand, fish tagines are much quicker to cook!</p>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlzGAA_RZbMJAH8PTVam7vZPmnZtbbmmymXo7cEOARAmIf7FpRfrzxVz9VhNXSTAGBKEWw8di8dFYyTQctwuloQtjh7gZs1ayBv7iPBlavensEqBiz_YgVAZt-ifaIn2sVplh-wegIV9OK/s1600/CIRUELAS,+TAJIN,+CORDERO.jpg" usemap="#tajinMap" alt="Lamb Tagine" id="tajinImage">
+        <map name="tajinMap">
+            <area shape="circle" coords="150,200,90" alt="Lamb" title="Lamb" href="#lamb">
+            <area shape="poly" coords="100,50,200,100,100,150" alt="Cover" title="Cover" href="#cover">
+        </map>
+    </div>
+    <div class="footer-section">
+        <address>
+            Written by Jesús J. Cantero.<br>
+            Duck Republik Student Hotel Riga, Lauvas iela 1, Latgales priekšpilsēta, Rīga, LV-1003<br>
+            Riga, Latvia
+        </address>
+        <a href="#home">
+            <img src="flecha_arriba.png" alt="Back to top" id="backToTop">
+        </a>
+    </div>
+
+    <script>
+        function openPopup(url, title, width, height) {
+            const left = (window.screen.width - width) / 2;
+            const top = (window.screen.height - height) / 2;
+
+            window.open(url, title, `width=${width},height=${height},top=${top},left=${left},resizable=yes`);
+        }
+        function toggleIframe() {
+        var iframe = document.getElementById('articleFrame');
+        var button = document.getElementById('toggleButton');
+        if (iframe.style.display === "none") {
+        iframe.style.display = "block";
+        button.textContent = "Hide Article";
+        } else {
+        iframe.style.display = "none";
+        button.textContent = "Show Article";
+            }
+        }
+    </script>
+</body>
+</html>
