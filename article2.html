@@ -122,7 +122,11 @@
         document.querySelector('#backToTop').addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Adjust the scroll position to account for the navbar height
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            window.scrollBy(0, -navbarHeight); // Offset the scroll by the height of the navbar
         });
+
     </script>
 </body>
 </html>
